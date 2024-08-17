@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Category Section */
+
+.index-category{
+width: 100%;
+padding: 60px 0;
+background-color: aliceblue;
+display: flex;
+justify-content: center;
+column-gap: 20px;
+flex-wrap: wrap;
+}
+
+.index-category-box{
+    width: 200px;
+    height: 200px;
+    background-color: #111;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.index-category-box h3{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -2px 2px 4px #000;
+    z-index: 100;
+}
+
+.index-category-box:nth-child(2){
+    background-image: url(../landingPage/images/gaming.jpg);
+}
+
+.index-category-box:nth-child(3){
+    background-image: url(../landingPage/images/laptop2.png);
+}
+
+.index-category-box:nth-child(4){
+    background-image: url(../landingPage/images/laptop2.png);
+}
+
+.index-category-box:nth-child(5){
+    background-image: url(../landingPage/images/laptop1.jpg);
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+
+}
+.index-category-box:hover .dark-overlay{
+    opacity: 0;
+}
+
+.index-category p{
+    font-size: 22px;
+    line-height: 18px;
+    color: #111;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+}
+
+/* footer */
+
+.wrapper-main{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-main{
+    width: 100%;
+    padding: 60px 0 100px;
+    background-color: #141414;
+
+}
+
+.footer-main-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.footer-testemoni{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.footer-testemoni img{
+    width: 60%;
+    border-radius: 100px;
+}
+.footer-testemoni p{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 20px 0;
+    
+}
+.footer-contact{
+    padding: 10px 20px;
+    margin: 40px 0 60px;
+    border: 2px solid #fff;
+    font-weight: 600;
+    transition: all ease-in-out 200ms;
+}
+.footer-contact:hover{
+    border: 2px solid red;
+}
+
+.footer-sitemap{
+    flex-basis: 100%;
+    display: flex;
+
+}
+.footer-sitemap a{
+    line-height: 30px;
+
+}
+
+.footer-sitemap a:hover{
+    opacity: 0.8;
+
+}
+
+.footer-sitemap ul:nth-child(1){
+    border-left: 2px solid palevioletred;
+    padding-left: 20px;
+}
+
+.footer-sitemap ul:nth-child(1),
+.footer-sitemap ul:nth-child(2){
+    flex-basis: 180%;
+}
+.footer-sitemap ul:nth-child(3){
+    flex-basis: 340%;
+}
+
+.footer-sitemap p{
+    text-transform: uppercase;
+}
+.footer-sitemap ul:nth-child(4){
+    flex-grow: 1;
+}
+
+.footer-sitemap ul:nth-child(4) li{
+    clear: both;
+    float: right;
+}
